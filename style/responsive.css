@@ -1,31 +1,136 @@
-@media all and (max-width:900px) {
+
+@media (max-width:1000px) and (max-width:1500px) {
+    .header{
+        width: 100%;
+    }
+
+    .content-word{
+        padding: 8rem;
+    }
+
+    .work-image{
+        margin-left: 5px;
+        width: 25%;
+    }
+
+    .work-image img {
+        padding: 8px 8px;
+        width: 100%;
+    }
+
+    .columns {
+        width: 70%;
+        margin-left: 80px
+    }
+}
+
+
+@media screen and (max-width:900px) {
     body{
         flex-direction: column;
-    }
-
-    .about-feature{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .design{
-        flex-direction: column;
         width: 100%;
+        
+    }
+
+    .content-logo{
+        margin-left: 7rem;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        list-style: none;
+        height: 59px;
+        position: fixed;
+        z-index: 1000;
+        overflow: hidden;
+        top: 0px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);    
+    }
+
+    .nav_bar-button { 
+        display: block;
+        margin-left: 2rem;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+
+
+    .content-word{
+        padding-left: 2rem;
+    }
+
+    .header ul li{
+        margin-left: 20px;
+        padding: 22px;
+    }
+
+    .about{
+        width: 100%;
+    }
+
+    .content-img img{
+        width: 100%;
+        height: 75rem;
+    }
+
+    .content-word span {
+        font-size: 70px;
+    }
+
+    .pricing-content {
+        padding-top: 135px;
+        padding-bottom: 47px;
     }
 
     .team-person{
         flex-direction: column;
         align-items: center;
+        margin: 0%;
     }
 
     .team-member{
-        width: 60%;
+        width: 50%;
+    }
+
+    /* .header ul li {
+
+    } */
+
+    .design{
+        height: 42rem;
+    }
+
+    .design-content {
+        transform: translate(20px, 123px);
+        width: 50%;
+    }
+
+    .design-img img{
+        width: 105%;
+        margin: 36px 8px;
     }
 
     .number-container{
         flex-direction: column;
         height: auto;
         padding-bottom: 5rem;
+    }
+
+    .contact-image img{
+        width: 95%;
+    }
+
+    .contact-image{
+        width: 96%;
     }
 
     .work-image{
@@ -62,9 +167,19 @@
 }
 
 
-@media all and (max-width: 800px) {
+@media screen and (max-width: 800px) {
+    
+    .header{
+        display: block;
+    }
+
+    /* .content-img img{
+        
+    } */
+    
     body{
         flex-direction: column;
+        padding-top: 60px;
     }
 
     .about-feature{
@@ -73,7 +188,6 @@
     }
 
     .design{
-        flex-direction: column;
         width: 100%;
     }
 
@@ -89,7 +203,8 @@
     .number-container{
         flex-direction: column;
         height: auto;
-        padding-bottom: 5rem;
+        padding-bottom: 4rem;
+        text-align: center;
     }
 
     .work-image{
@@ -114,11 +229,20 @@
     .pricing-container{
         height: auto;
     }
+
+    .contact-image img{
+        width: 95%;
+    }
 }
 
-@media all and (max-width:700px){
+@media screen and (max-width:700px){
     body{
         flex-direction: column;
+    }
+
+    .design-img img{
+        width: 485px;
+        margin: 90px 55px;
     }
 
     .about-feature{
@@ -129,6 +253,7 @@
     .design{
         flex-direction: column;
         width: 100%;
+        height: auto;
     }
 
     .team-person{
@@ -144,6 +269,10 @@
         flex-direction: column;
         height: auto;
         padding-bottom: 5rem;
+    }
+
+    .contact-image img{
+        width: 0%;
     }
 
     .work-image{
@@ -160,9 +289,9 @@
     }
 
     .columns-content{
-        flex-direction: column;
+
         height: auto;
-        width: 20%
+        width: 32%
     }
 
     .pricing-container{
@@ -170,190 +299,14 @@
 
     }
 }
-@media all and (max-width:600px){
+@media screen and (max-width:600px){
+    
+    html{
+        width: 100%;
+    }
+    
     body{
-        flex-direction: column;
-    }
-
-    .about-feature{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .design{
-        flex-direction: column;
         width: 100%;
-    }
-
-    .team-person{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .team-member{
-        width: 60%;
-    }
-
-    .number-container{
-        flex-direction: column;
-        height: auto;
-        padding-bottom: 5rem;
-    }
-
-    .work-image{
-        flex-direction: column;
-        width: 60%;
-        text-align: center;
-        margin: 0px 20%;
-    }
-
-    .team-member-button {
-        width: 10%;
-    }
-
-    .skill-container{
-        flex-direction: column;
-        height: auto;
-        margin-top: -7px;
-        padding-bottom: 20px;
-    }
-
-    .chart-container{
-        width: 85%;
-    }
-
-    .column{
-        flex-direction: column;
-        height: auto;
-        width: 20%
-    }
-
-    .pricing-container{
-        height: auto;
-    }
-
-    .skill-chart{
-        margin-top: 0px;
-        width: 100%;
-    }
-
-    .skill-content p{
-        width: 200%;
-        justify-content:space-between;
-    }
-
-    .team-member-button{
-        width: 88%;
-    }
-
-    .design-img img{
-        transform: translate(10px, 125px);
-        width: 450px;
-    }
-
-    .columns-content{
-        width: 50%;
-
-    }
-
-    .contact-image img{
-        width: 90%;
-    }
-}
-@media all and (max-width:500px) {
-    body{
-        flex-direction: column;
-    }
-
-    .about-feature{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .design{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .team-person{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .team-member{
-        width: 60%;
-    }
-
-    .number-container{
-        flex-direction: column;
-        height: auto;
-        padding-bottom: 5rem;
-    }
-
-    .work-image{
-        flex-direction: column;
-        width: 60%;
-        text-align: center;
-        margin: 0px 20%;
-    }
-
-    .team-member-button {
-        width: 10%;
-    }
-
-    .skill-container{
-        flex-direction: column;
-        height: auto;
-        margin-top: -7px;
-        padding-bottom: 20px;
-    }
-
-    .chart-container{
-        width: 85%;
-    }
-
-    .column{
-        flex-direction: column;
-        height: auto;
-        width: 20%
-    }
-
-    .pricing-container{
-        height: auto;
-    }
-
-    .skill-chart{
-        margin-top: 0px;
-        width: 100%;
-    }
-
-    .skill-content p{
-        width: 200%;
-        justify-content:space-between;
-    }
-
-    .team-member-button{
-        width: 88%;
-    }
-
-    .design-img img{
-        transform: translate(10px, 125px);
-        width: 450px;
-    }
-
-    .columns-content{
-        width: 50%;
-
-    }
-
-    .contact-image img{
-        width: 90%;
-    }
-}
-
-@media all and (max-width:400px) {
-    body{
-        flex-direction: column;
     }
 
     .header{
@@ -370,6 +323,10 @@
         width: 100%;
     }
 
+    .content-img img{
+        width: 100%;
+    }
+
     .team-person{
         flex-direction: column;
         align-items: center;
@@ -383,6 +340,271 @@
         flex-direction: column;
         height: auto;
         padding-bottom: 5rem;
+    }
+
+    .work-image{
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        margin: 0px 20%;
+    }
+
+    .team-member-button {
+        width: 10%;
+    }
+
+    .skill-container{
+        flex-direction: column;
+        height: auto;
+        margin-top: -7px;
+        padding-bottom: 20px;
+    }
+
+    .chart-container{
+        width: 85%;
+        margin-left: 40px;
+    }
+
+    .column{
+        flex-direction: column;
+        height: auto;
+        width: 100%
+    }
+
+    .skill-chart{
+        margin-left: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .skill-chart i {
+        margin-top: 15px;
+        margin-left: 45px;
+    }
+
+    .skill-content p{
+        width: 200%;
+        justify-content:space-between;
+    }
+
+    .team-member-button{
+        width: 88%;
+    }
+
+    .design-img img{
+        transform: translate(-46px, 60px);
+        width: 450px;;
+    }
+
+    .pricing-container{
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+
+    .columns-content{
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .table-pricing{
+        flex-direction: column;
+    }
+
+    .contact-image{
+        width: 90%;
+    } 
+}
+@media screen and (max-width:500px) {
+    body{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-nav-mobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        max-width: 100%;
+        background-color: black;
+        flex-direction: column;
+        list-style-type: none;
+    }
+
+    .header-nav-link{
+        padding: 0;
+        margin:0;
+    }
+
+    .header-nav-link a{
+        color: #fff;
+    }
+
+    .content-img img{
+        width: 100%;
+        height: 75rem;
+    }
+
+    .content-word span {
+        font-size: 50px;
+    }
+
+    .content-word{
+        margin: 20px;
+        padding: 0;
+    }
+
+    .content-logo{
+        margin-left: 3rem;
+    }
+
+    .about-feature{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .design{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .team-person{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member{
+        width: 75%;
+    }
+
+    .number-container{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 5rem;
+        width:auto;
+    }
+
+    .work-image{
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        margin: 0px 20%;
+    }
+
+    .team-member-button {
+        width: 10%;
+    }
+
+    .skill-container{
+        flex-direction: column;
+        height: auto;
+        margin-top: -7px;
+        padding-bottom: 20px;
+    }
+
+    .chart-container{
+        width: 85%;
+        margin-left: 40px;
+    }
+
+    .column{
+        flex-direction: column;
+        height: auto;
+        width: 20%
+    }
+
+    .pricing-container{
+        height: auto;
+    }
+
+    .skill-chart{
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .skill-content p{
+        width: 180%;
+        justify-content:space-between;
+    }
+
+    .team-member-button{
+        width: 88%;
+    }
+
+    .design-img{
+        width: auto;
+    }
+
+    .design-img img{
+        margin: 10rem 0px; 
+        padding: 0px;
+        width: 90%;
+        transform: translate(15px, 70px);
+    }
+    
+
+    .contact-form .contact-text{
+        width:85%;
+    }
+
+    .columns-content{
+        width: 85%;
+
+    }
+
+    .contact-image img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body{
+        flex-direction: column;
+    }
+
+    .content-img img{
+        width: 100%;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+
+
+    .about-feature{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .design{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .team-person{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .team-member{
+        width: 90%;
+        margin-left:0 ;
+    }
+
+    .number-container{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+
+    .number-block{
+        width: 100%;
     }
 
     .work-image{
@@ -409,7 +631,7 @@
     }
 
     .team-member-button{
-        width: 100%;
+        width: 90%;
     }
     
     .contact-image img{
